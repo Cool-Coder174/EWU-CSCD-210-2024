@@ -1,0 +1,46 @@
+ /usr/bin/env /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/isaachernandez/Documents/cscd210/Lab1/bin cscd210lab1.CSCD210Lab1 
+➜  Lab1  /usr/bin/env /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -c
+p /Users/isaachernandez/Documents/cscd210/Lab1/bin cscd210lab1.CSCD210Lab1 
+
+Enter your shoe size (no half-sizes): 9
+Enter your birth year(yyyy): 2000
+your shoe size is the numbers befor the commaand your age is the numbers after the comma19,19
+
+➜  Lab1  cd /Users/isaachernandez/Documents/cscd210/Lab1 ; /usr/bin/env /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/b
+in/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/isaachernandez/Documents/cscd210/Lab1/bin cscd210lab1.CSCD210Lab1 
+
+Enter your shoe size (no half-sizes): 420
+Enter your birth year(yyyy): 1969
+your shoe size is the numbers befor the commaand your age is the numbers after the comma 4,30,50
+
+➜  Lab1  cd /Users/isaachernandez/Documents/cscd210/Lab1 ; /usr/bin/env /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/b
+in/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/isaachernandez/Documents/cscd210/Lab1/bin cscd210lab1.CSCD210Lab1 
+
+Enter your shoe size (no half-sizes): 13
+Enter your birth year(yyyy): 1999
+your shoe size is the numbers befor the commaand your age is the numbers after the comma 23,20
+
+➜  Lab1  cd /Users/isaachernandez/Documents/cscd210/Lab1 ; /usr/bin/env /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/b
+in/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/isaachernandez/Documents/cscd210/Lab1/bin cscd210lab1.CSCD210Lab1 
+
+Enter your shoe size (no half-sizes): 12.5
+
+Exception in thread "main" java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+        at java.base/java.util.Scanner.next(Scanner.java:1594)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+        at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+        at cscd210lab1.CSCD210Lab1.main(CSCD210Lab1.java:14)
+➜  Lab1 
+
+
+
+
+
+
+
+
+
+
+
+
