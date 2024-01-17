@@ -4,7 +4,6 @@ package cscd210lab2;
 import java.util.Scanner;
 import java.util.DecimalFormat;
 import java.util.HashMap;
-import java.util.hashmap;
 
 public class CSCD210Lab2 {
     public static void main(String[] args) {
