@@ -1,0 +1,37 @@
+// First run
+
+Please enter the skier's name: Isa
+Please enter the winning time of the race (in seconds with two decimal places): 420.69
+
+Isa was traveling at a rate of:
+13.29 miles per hour
+19.5 feet per second
+21.39 kilometers per hour
+5.94 meters per second
+It would take 15.39 seconds for Isa to ski 100 yards.
+It would take 4 minutes and 30.81 seconds for Isa to ski one mile.
+
+// Second run
+Please enter the skier's name: Rizzi
+Please enter the winning time of the race (in seconds with two decimal places): 69.69
+
+Rizzi was traveling at a rate of:
+80.24 miles per hour
+117.69 feet per second
+129.14 kilometers per hour
+35.87 meters per second
+It would take 2.55 seconds for Rizzi to ski 100 yards.
+It would take 0 minutes and 44.86 seconds for Rizzi to ski one mile.
+
+// Third run
+
+Please enter the skier's name: Guy Fawks
+Please enter the winning time of the race (in seconds with two decimal places): 99.01
+
+Guy Fawks was traveling at a rate of:
+56.48 miles per hour
+82.84 feet per second
+90.9 kilometers per hour
+25.25 meters per second
+It would take 3.62 seconds for Guy Fawks to ski 100 yards.
+It would take 1 minutes and 3.74 seconds for Guy Fawks to ski one mile.
