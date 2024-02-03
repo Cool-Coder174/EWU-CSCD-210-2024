@@ -12,6 +12,10 @@ public class CSCD210Lab4 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
+        // Prompt for beginning meter value
+        System.out.print("Please enter the beginning meter value: ");
+        int beginningMeterValue = kb.nextInt();
+
         // Prompt for ending meter value
         System.out.print("Please enter the ending meter value: ");
         int endingMeterValue = kb.nextInt();
@@ -31,6 +35,9 @@ public class CSCD210Lab4 {
         System.out.println("Ending Meter Reading:   " + endingMeterValue);
         System.out.println("Gallons Used:          " + calculateGallonsUsed(beginningMeterValue, endingMeterValue));
         System.out.println("Bill Amount:          " + df.format(bill));
+
+        // close the Scanner
+        kb.close();
     }
 
     // Calculates the gallons of water used
@@ -54,5 +61,7 @@ public class CSCD210Lab4 {
         }
 
         return baseFee + gallonsUsed * ratePerGallon;
+
+
     }
 }

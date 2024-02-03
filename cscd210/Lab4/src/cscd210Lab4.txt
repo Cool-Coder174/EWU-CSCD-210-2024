@@ -1,0 +1,36 @@
+// Run 1
+Please enter the beginning meter value: 12
+Please enter the ending meter value: 56
+Please enter the customer code (r or b): r
+
+Customer Summary:
+Customer Code:  r
+Beginning Meter Reading: 12
+Ending Meter Reading:   56
+Gallons Used:          4.4
+Bill Amount:          $25.00
+
+// Run 2
+
+Please enter the beginning meter value: 35
+Please enter the ending meter value: 71
+Please enter the customer code (r or b): b
+
+Customer Summary:
+Customer Code:  b
+Beginning Meter Reading: 35
+Ending Meter Reading:   71
+Gallons Used:          3.6
+Bill Amount:          $1,500.00
+
+// Run 3
+Please enter the beginning meter value: 1
+Please enter the ending meter value: 79
+Please enter the customer code (r or b): r
+
+Customer Summary:
+Customer Code:  r
+Beginning Meter Reading: 1
+Ending Meter Reading:   79
+Gallons Used:          7.8
+Bill Amount:          $25.00
