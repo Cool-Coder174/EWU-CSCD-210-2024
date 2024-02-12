@@ -1,6 +1,6 @@
 package Lab5.src.cscd210lab5;
 
-import java.util.InputMismatchException;
+import java.util.InputMismatchException; // Import for handling invalid input
 import java.util.Scanner;
 
 public class CSCD210Lab5 {
@@ -67,7 +67,8 @@ public class CSCD210Lab5 {
                 }
             }
         } while (theNum != 0); // Exit when 0 is entered
-
+        
+        // Close the scanner
         kb.close();
     }
 
