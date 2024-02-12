@@ -1,5 +1,6 @@
 package Lab5.src.cscd210lab5;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CSCD210Lab5 {
@@ -66,6 +67,8 @@ public class CSCD210Lab5 {
                 }
             }
         } while (theNum != 0); // Exit when 0 is entered
+
+        kb.close();
     }
 
     private static int countDigits(int num, int digit) {
