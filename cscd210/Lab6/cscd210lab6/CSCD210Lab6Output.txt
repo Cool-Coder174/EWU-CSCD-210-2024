@@ -1,0 +1,117 @@
+Enter a positive integer: 69
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 1
+Enter a positive integer: 69
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 2
+69 is odd.
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 3
+Enter another integer for comparison: 4
+69 is heavier than 4
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 5
+96
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 1
+Enter a positive integer: 2
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 4
+E
+EE
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 55
+Invalid choice. Please enter a number between 1 and 6.
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 4
+E
+EE
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 4
+E
+EE
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 3
+Enter another integer for comparison: 34
+2 is lighter than 34
+
+Menu:
+1. Read a positive integer
+2. Check odd/even/zero
+3. Light or heavy comparison
+4. Print E pattern
+5. Print digits in reverse
+6. Exit
+Enter your choice: 6
+Good Bye
+(base) ➜  Lab6 git:(main) ✗ xx
