@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"cscd210lab6","l":"CSCD210Lab6"},{"p":"cscd210methods","l":"CSCD210Lab6Methods"}];updateSearchResults();

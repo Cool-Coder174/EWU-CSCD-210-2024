@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"cscd210lab6"},{"l":"cscd210methods"}];updateSearchResults();
