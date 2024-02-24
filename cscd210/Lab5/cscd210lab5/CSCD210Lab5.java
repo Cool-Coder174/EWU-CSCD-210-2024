@@ -1,4 +1,4 @@
-package Lab5.src.cscd210lab5;
+package Lab5.cscd210lab5;
 
 import java.util.InputMismatchException; // Import for handling invalid input
 import java.util.Scanner;

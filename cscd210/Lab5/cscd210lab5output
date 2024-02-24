@@ -1,0 +1,34 @@
+
+Menu:
+1) Enter a new number
+2) Print even, odd, and zero counts
+3) Print prime numbers up to theNum
+4) Quit
+Choice --> 3
+Prime numbers from 2 to 6: 2 3 5 
+Please enter a positive integer (or 0 to quit): 4
+
+Menu:
+1) Enter a new number
+2) Print even, odd, and zero counts
+3) Print prime numbers up to theNum
+4) Quit
+Choice --> 1
+Please enter a positive integer (or 0 to quit): 345
+
+Menu:
+1) Enter a new number
+2) Print even, odd, and zero counts
+3) Print prime numbers up to theNum
+4) Quit
+Choice --> 2
+345 has 0 evens, 0 odds, and 0 zeros.
+Please enter a positive integer (or 0 to quit): 0
+
+Menu:
+1) Enter a new number
+2) Print even, odd, and zero counts
+3) Print prime numbers up to theNum
+4) Quit
+Choice --> 4
+Goodbye!
