@@ -1,7 +1,16 @@
 package cscd210lab6;
 
 import java.util.Scanner;
-import cscd210methods.CSCD210Lab6Methods;
+import cscd210lab6.CSCD210Lab6Methods;
+// import cscd210methods.CSCD210Lab6Methods; Please include a read me file with the code, Java does not support html naively. :(
+   // NOTE: Addind a ReadMe file is not a requirement for this lab, but it is a good idea to do so for future labs.  
+   //The ReadMe file should be a plain text file and should contain the following information:
+   // 1. Clear instructions on how to compile and run the program
+   // 2. A brief description of the program
+   // 3. A brief description of the methods in the program
+   // 4. Any other information you feel is important for the user to know about the program
+   // 5. Github offers free hosting for HTML files, so you can use that to host your HTML files and provide a link to it in your ReadMe.mb submission.
+
 
 /**
  * This class contains the main method.  <br>
