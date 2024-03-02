@@ -161,6 +161,7 @@ public class IntStatisticsUtils {
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
+    
    public static double computeStdDev(final int[] myArray) {
       if (myArray == null) {
          throw new IllegalArgumentException("myArray cannot be null");
