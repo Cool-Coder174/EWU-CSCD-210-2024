@@ -1,6 +1,6 @@
 package cscd210utils;
 
-import cscd210sort.SortUtils;
+import java.util.Arrays;
 
 /**
  * The IntStatisticsUtils class performs basic statistics on integer arrays.
@@ -9,8 +9,8 @@ import cscd210sort.SortUtils;
  * All parameters will be passed as final. <br>
  * All pre and post conditions will be enforced
  */
-public class IntStatisticsUtils
-{
+public class IntStatisticsUtils {
+   
    /**
     * The computeMean method computes the mean of the array by summing the values in
     * the array and then dividing by the number of elements in the array
@@ -24,11 +24,22 @@ public class IntStatisticsUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static double computeMean(int [] myArray)
-   {
-      return 0;
+   public static double computeMean(final int[] myArray) {
+      if (myArray == null) {
+         throw new IllegalArgumentException("myArray cannot be null");
+      }
       
-   }// end method
+      if (myArray.length < 0) {
+         throw new IllegalArgumentException("myArray length cannot be less than zero");
+      }
+      
+      int sum = 0;
+      for (int num : myArray) {
+         sum += num;
+      }
+      
+      return (double) sum / myArray.length;
+   }
 
    /**
     * The printResults methods prints the results of the statistical calculation
@@ -40,9 +51,16 @@ public class IntStatisticsUtils
     * @throws IllegalArgumentException if type is null
     * @throws IllegalArgumentException if type is empty
     */
-   public static void printResults(final String type, final double result)
-   {
-
+   public static void printResults(final String type, final double result) {
+      if (type == null) {
+         throw new IllegalArgumentException("type cannot be null");
+      }
+      
+      if (type.isEmpty()) {
+         throw new IllegalArgumentException("type cannot be empty");
+      }
+      
+      System.out.println(type + ": " + result);
    }
 
    /**
@@ -71,9 +89,27 @@ public class IntStatisticsUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static double computeMedian(int [] myArray)
-   {
-      return 1;
+   public static double computeMedian(final int[] myArray) {
+      if (myArray == null) {
+         throw new IllegalArgumentException("myArray cannot be null");
+      }
+      
+      if (myArray.length < 0) {
+         throw new IllegalArgumentException("myArray length cannot be less than zero");
+      }
+      
+      int[] sortedArray = Arrays.copyOf(myArray, myArray.length);
+      Arrays.sort(sortedArray);
+      int length = sortedArray.length;
+      
+      if (length % 2 == 0) {
+         int index1 = length / 2;
+         int index2 = index1 - 1;
+         return ((double) sortedArray[index1] + sortedArray[index2]) / 2;
+      } else {
+         int middleIndex = length / 2;
+         return sortedArray[middleIndex];
+      }
    }
 
    /**
@@ -91,9 +127,20 @@ public class IntStatisticsUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static double computeMidpoint(int [] myArray)
-   {
-      return 1;
+   public static double computeMidpoint(final int[] myArray) {
+      if (myArray == null) {
+         throw new IllegalArgumentException("myArray cannot be null");
+      }
+      
+      if (myArray.length < 0) {
+         throw new IllegalArgumentException("myArray length cannot be less than zero");
+      }
+      
+      int[] sortedArray = Arrays.copyOf(myArray, myArray.length);
+      Arrays.sort(sortedArray);
+      int length = sortedArray.length;
+      
+      return ((double) sortedArray[0] + sortedArray[length - 1]) / 2;
    }
    
    /**
@@ -114,9 +161,30 @@ public class IntStatisticsUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static double computeStdDev(int [] myArray)
-   {
-      return 1;
+   public static double computeStdDev(final int[] myArray) {
+      if (myArray == null) {
+         throw new IllegalArgumentException("myArray cannot be null");
+      }
+      
+      if (myArray.length < 0) {
+         throw new IllegalArgumentException("myArray length cannot be less than zero");
+      }
+      
+      double mean = computeMean(myArray);
+      
+      double[] deviations = new double[myArray.length];
+      for (int i = 0; i < myArray.length; i++) {
+         deviations[i] = myArray[i] - mean;
+      }
+      
+      double sumOfSquaredDeviations = 0;
+      for (double deviation : deviations) {
+         sumOfSquaredDeviations += deviation * deviation;
+      }
+      
+      double variance = sumOfSquaredDeviations / (myArray.length - 1);
+      
+      return Math.sqrt(variance);
    }
 
 }// end class
