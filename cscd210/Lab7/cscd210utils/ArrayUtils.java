@@ -8,8 +8,7 @@ import java.util.Scanner;
  * All parameters will be passed as final. <br>
  * All pre and post conditions will be enforced
  */
-public class ArrayUtils
-{
+public class ArrayUtils {
    /**
     * The createAndFillArray method creates the integer array of size num and then fills the array by 
     * asking the user to enter an integer.
@@ -21,15 +20,20 @@ public class ArrayUtils
     * @throws IllegalArgumentException if num is less than or equal to 0
     * @throws IllegalArgumentException if kb is null
     */
-   public static int [] createAndFillArray(final int num, final Scanner kb)
-   {
-      if(num < 1 || kb == null)
-         throw new IllegalArgumentException("bad params createAndFill");
-         
-      int [] array = null;
-            
+   public static int[] createAndFillArray(final int num, final Scanner kb) {
+      if (num <= 0 || kb == null) {
+         throw new IllegalArgumentException("Invalid parameters for createAndFillArray");
+      }
+      
+      int[] array = new int[num];
+      
+      for (int i = 0; i < num; i++) {
+         System.out.print("Enter an integer: ");
+         array[i] = kb.nextInt();
+      }
+      
       return array;
-   }// end method
+   }
 
    /**
     * The addNum method makes a new array that is one more in length the old array which is passed in.
@@ -44,12 +48,22 @@ public class ArrayUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static int [] addNum(int [] myArray, final Scanner kb)
-   {
-      int [] copy = null;      
-      return copy;
+   public static int[] addNum(int[] myArray, final Scanner kb) {
+      if (kb == null || myArray == null || myArray.length < 0) {
+         throw new IllegalArgumentException("Invalid parameters for addNum");
+      }
       
-   }// end method
+      int[] copy = new int[myArray.length + 1];
+      
+      for (int i = 0; i < myArray.length; i++) {
+         copy[i] = myArray[i];
+      }
+      
+      System.out.print("Enter an integer to add: ");
+      copy[copy.length - 1] = kb.nextInt();
+      
+      return copy;
+   }
 
    /**
     * The deleteSingleValue method first prompts the user to enter a value that should be deleted.<br>
@@ -67,11 +81,39 @@ public class ArrayUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static int [] deleteSingleValue(int [] myArray, final Scanner kb)
-   {
-      int [] copy = null;
+   public static int[] deleteSingleValue(int[] myArray, final Scanner kb) {
+      if (kb == null || myArray == null || myArray.length < 0) {
+         throw new IllegalArgumentException("Invalid parameters for deleteSingleValue");
+      }
+      
+      System.out.print("Enter a value to delete: ");
+      int valueToDelete = kb.nextInt();
+      
+      boolean found = false;
+      for (int i = 0; i < myArray.length; i++) {
+         if (myArray[i] == valueToDelete) {
+            found = true;
+            break;
+         }
+      }
+      
+      if (!found) {
+         System.out.println("Value NOT found");
+         return myArray;
+      }
+      
+      int[] copy = new int[myArray.length - 1];
+      int index = 0;
+      
+      for (int i = 0; i < myArray.length; i++) {
+         if (myArray[i] != valueToDelete) {
+            copy[index] = myArray[i];
+            index++;
+         }
+      }
+      
       return copy;
-   }// end method
+   }
 
    /**
     * The printArray method prints the array in the following fashion<br>
@@ -83,9 +125,21 @@ public class ArrayUtils
     * @throws IllegalArgumentException if myArray is null
     * @throws IllegalArgumentException if the length of myArray is less than zero
     */
-   public static void printArray(int [] myArray)
-   {
+   public static void printArray(int[] myArray) {
+      if (myArray == null || myArray.length < 0) {
+         throw new IllegalArgumentException("Invalid parameter for printArray");
+      }
       
-   }// end printArray
-
-}// end class
+      System.out.print("[");
+      
+      for (int i = 0; i < myArray.length; i++) {
+         System.out.print(myArray[i]);
+         
+         if (i != myArray.length - 1) {
+            System.out.print(", ");
+         }
+      }
+      
+      System.out.println("]");
+   }
+}
