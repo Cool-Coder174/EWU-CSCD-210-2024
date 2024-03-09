@@ -1,0 +1,38 @@
+// Run 1
+Clock 3 12:45:15
+Clock 3 Hour 12
+Clock 3 Minutes:Seconds 45:15
+
+Clock 1 00:00:00
+Clock 1 after setting hours by 3 hours 03:00:00
+Clock 1 after setting hours by 25 hours 01:00:00
+
+Clock 2 10:59:00
+Clock 2 after setting minutes by 20 minutes 10:20:00
+Clock 2 after setting minutes by 170 minutes 10:50:00
+
+// Run 2
+Clock 3 12:45:15
+Clock 3 Hour 12
+Clock 3 Minutes:Seconds 45:15
+
+Clock 1 00:00:00
+Clock 1 after setting hours by 3 hours 03:00:00
+Clock 1 after setting hours by 25 hours 01:00:00
+
+Clock 2 10:59:00
+Clock 2 after setting minutes by 20 minutes 10:20:00
+Clock 2 after setting minutes by 170 minutes 10:50:00
+
+// Run 3
+Clock 3 12:45:15
+Clock 3 Hour 12
+Clock 3 Minutes:Seconds 45:15
+
+Clock 1 00:00:00
+Clock 1 after setting hours by 3 hours 03:00:00
+Clock 1 after setting hours by 25 hours 01:00:00
+
+Clock 2 10:59:00
+Clock 2 after setting minutes by 20 minutes 10:20:00
+Clock 2 after setting minutes by 170 minutes 10:50:00
